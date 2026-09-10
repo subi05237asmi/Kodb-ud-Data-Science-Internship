@@ -1,254 +1,153 @@
-# Kodbud Data Science & Data Analytics Internship
+Summary
+=======
 
-## 👨‍💻 About Me
+This dataset (ml-latest-small) describes 5-star rating and free-text tagging activity from [MovieLens](http://movielens.org), a movie recommendation service. It contains 100836 ratings and 3683 tag applications across 9742 movies. These data were created by 610 users between March 29, 1996 and September 24, 2018. This dataset was generated on September 26, 2018.
 
-Hi, I'm **SUBI ASMI**, a Data Analytics and Data Science enthusiast with a strong interest in working with data, discovering meaningful insights, and building practical solutions using Python and Machine Learning.
+Users were selected at random for inclusion. All selected users had rated at least 20 movies. No demographic information is included. Each user is represented by an id, and no other information is provided.
 
-This repository contains the **8 projects** I completed during my **Kodbud Data Science & Data Analytics Internship**.
+The data are contained in the files `links.csv`, `movies.csv`, `ratings.csv` and `tags.csv`. More details about the contents and use of all these files follows.
 
-Throughout this internship, I focused on developing practical skills by working with datasets, performing data analysis, building machine learning models, creating visualizations, and solving real-world data problems.
+This is a *development* dataset. As such, it may change over time and is not an appropriate dataset for shared research results. See available *benchmark* datasets if that is your intent.
 
----
+This and other GroupLens data sets are publicly available for download at <http://grouplens.org/datasets/>.
 
-## 🚀 Internship Overview
 
-During this internship, I completed both the **mandatory and optional tasks**, giving me hands-on experience across different areas of Data Analytics and Data Science.
+Usage License
+=============
 
-The projects helped me understand how data is collected, cleaned, analyzed, visualized, and used to build predictive and recommendation-based solutions.
+Neither the University of Minnesota nor any of the researchers involved can guarantee the correctness of the data, its suitability for any particular purpose, or the validity of results based on the use of the data set. The data set may be used for any research purposes under the following conditions:
 
----
+* The user may not state or imply any endorsement from the University of Minnesota or the GroupLens Research Group.
+* The user must acknowledge the use of the data set in publications resulting from the use of the data set (see below for citation information).
+* The user may redistribute the data set, including transformations, so long as it is distributed under these same license conditions.
+* The user may not use this information for any commercial or revenue-bearing purposes without first obtaining permission from a faculty member of the GroupLens Research Project at the University of Minnesota.
+* The executable software scripts are provided "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of them is with you. Should the program prove defective, you assume the cost of all necessary servicing, repair or correction.
 
-## 📊 Projects Completed
+In no event shall the University of Minnesota, its affiliates or employees be liable to you for any damages arising out of the use or inability to use these programs (including but not limited to loss of data or data being rendered inaccurate).
 
-### 1. COVID-19 Data Analysis
-**Folder:** `Task_1_COVID_19_Analysis`
+If you have any further questions or comments, please email <grouplens-info@umn.edu>
 
-Performed exploratory analysis of COVID-19 data to understand trends and patterns.
 
-**Skills Used:**
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Data Analysis
-- Data Visualization
+Citation
+========
 
----
+To acknowledge use of the dataset in publications, please cite the following paper:
 
-### 2. Titanic Survival Prediction
-**Folder:** `Task_2_Titanic_Survival_Prediction`
+> F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. <https://doi.org/10.1145/2827872>
 
-Built a Machine Learning model to predict passenger survival using the Titanic dataset.
 
-**Skills Used:**
-- Python
-- Pandas
-- Data Preprocessing
-- Machine Learning
-- Classification
-- Model Evaluation
-- Scikit-learn
+Further Information About GroupLens
+===================================
 
----
+GroupLens is a research group in the Department of Computer Science and Engineering at the University of Minnesota. Since its inception in 1992, GroupLens's research projects have explored a variety of fields including:
 
-### 3. IPL Exploratory Data Analysis
-**Folder:** `Task_3_IPL_EDA`
+* recommender systems
+* online communities
+* mobile and ubiquitious technologies
+* digital libraries
+* local geographic information systems
 
-Analyzed IPL match and delivery data to identify trends, statistics, and useful insights related to teams and players.
+GroupLens Research operates a movie recommender based on collaborative filtering, MovieLens, which is the source of these data. We encourage you to visit <http://movielens.org> to try it out! If you have exciting ideas for experimental work to conduct on MovieLens, send us an email at <grouplens-info@cs.umn.edu> - we are always interested in working with external collaborators.
 
-**Skills Used:**
-- Python
-- Pandas
-- Data Cleaning
-- Exploratory Data Analysis
-- Data Visualization
-- Matplotlib
-- Seaborn
 
----
+Content and Use of Files
+========================
 
-### 4. Movie Recommendation System
-**Folder:** `Task_4_Movie_Recommendation`
+Formatting and Encoding
+-----------------------
 
-Developed a content-based movie recommendation system using movie-related data and cosine similarity.
+The dataset files are written as [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values) files with a single header row. Columns that contain commas (`,`) are escaped using double-quotes (`"`). These files are encoded as UTF-8. If accented characters in movie titles or tag values (e.g. Misérables, Les (1995)) display incorrectly, make sure that any program reading the data, such as a text editor, terminal, or script, is configured for UTF-8.
 
-**Skills Used:**
-- Python
-- Pandas
-- NumPy
-- Recommendation Systems
-- Cosine Similarity
-- Data Processing
 
----
+User Ids
+--------
 
-### 5. Salary Prediction Model
-**Folder:** `Task_5_Salary_Prediction`
+MovieLens users were selected at random for inclusion. Their ids have been anonymized. User ids are consistent between `ratings.csv` and `tags.csv` (i.e., the same id refers to the same user across the two files).
 
-Built a Linear Regression model to predict salary based on years of experience and evaluated the model using Mean Squared Error.
 
-**Skills Used:**
-- Python
-- Pandas
-- NumPy
-- Linear Regression
-- Scikit-learn
-- Mean Squared Error
-- Matplotlib
+Movie Ids
+---------
 
----
+Only movies with at least one rating or tag are included in the dataset. These movie ids are consistent with those used on the MovieLens web site (e.g., id `1` corresponds to the URL <https://movielens.org/movies/1>). Movie ids are consistent between `ratings.csv`, `tags.csv`, `movies.csv`, and `links.csv` (i.e., the same id refers to the same movie across these four data files).
 
-### 6. Student Performance Correlation Heatmap
-**Folder:** `Task_6_Correlation_Heatmap`
 
-Analyzed relationships between different student performance factors using correlation analysis and a heatmap.
+Ratings Data File Structure (ratings.csv)
+-----------------------------------------
 
-**Skills Used:**
-- Python
-- Pandas
-- Correlation Analysis
-- Data Visualization
-- Seaborn
-- Matplotlib
+All ratings are contained in the file `ratings.csv`. Each line of this file after the header row represents one rating of one movie by one user, and has the following format:
 
----
+    userId,movieId,rating,timestamp
 
-### 7. Twitter Sentiment Analysis
-**Folder:** `Task_7_Sentiment_Analysis`
+The lines within this file are ordered first by userId, then, within user, by movieId.
 
-Analyzed Twitter data and classified tweets into Positive, Neutral, and Negative sentiments.
+Ratings are made on a 5-star scale, with half-star increments (0.5 stars - 5.0 stars).
 
-**Skills Used:**
-- Python
-- Pandas
-- Data Cleaning
-- Sentiment Analysis
-- Data Visualization
-- Matplotlib
+Timestamps represent seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
 
----
-
-### 8. Business Data Cleaning Challenge
-**Folder:** `Task_8_Data_Cleaning_Challenge`
 
-Performed data cleaning and preprocessing on business data to improve data quality and prepare the dataset for analysis.
+Tags Data File Structure (tags.csv)
+-----------------------------------
 
-**Skills Used:**
-- Python
-- Pandas
-- Data Cleaning
-- Missing Value Handling
-- Duplicate Data Handling
-- Data Preprocessing
-- Data Quality
+All tags are contained in the file `tags.csv`. Each line of this file after the header row represents one tag applied to one movie by one user, and has the following format:
 
----
+    userId,movieId,tag,timestamp
 
-## 🛠️ Technical Skills Developed
+The lines within this file are ordered first by userId, then, within user, by movieId.
 
-Through these projects, I developed practical experience in:
+Tags are user-generated metadata about movies. Each tag is typically a single word or short phrase. The meaning, value, and purpose of a particular tag is determined by each user.
 
-- **Python**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **Scikit-learn**
-- **Exploratory Data Analysis (EDA)**
-- **Data Cleaning**
-- **Data Preprocessing**
-- **Data Visualization**
-- **Machine Learning**
-- **Linear Regression**
-- **Classification**
-- **Correlation Analysis**
-- **Recommendation Systems**
-- **Sentiment Analysis**
-- **Statistical Analysis**
-- **Git & GitHub**
+Timestamps represent seconds since midnight Coordinated Universal Time (UTC) of January 1, 1970.
 
----
 
-## 💡 Key Learning Outcomes
+Movies Data File Structure (movies.csv)
+---------------------------------------
 
-This internship gave me an opportunity to move beyond theoretical learning and gain practical experience working with datasets and solving data-related problems.
+Movie information is contained in the file `movies.csv`. Each line of this file after the header row represents one movie, and has the following format:
 
-During the internship, I improved my ability to:
+    movieId,title,genres
 
-- Work with real-world datasets
-- Clean and preprocess data
-- Identify patterns and relationships in data
-- Perform exploratory data analysis
-- Create meaningful visualizations
-- Build and evaluate Machine Learning models
-- Develop recommendation-based solutions
-- Perform sentiment analysis
-- Handle data quality issues
-- Debug and improve Python programs
-- Use Git and GitHub to manage projects
-- Present and explain technical work clearly
+Movie titles are entered manually or imported from <https://www.themoviedb.org/>, and include the year of release in parentheses. Errors and inconsistencies may exist in these titles.
 
----
+Genres are a pipe-separated list, and are selected from the following:
 
-## 💪 My Approach
+* Action
+* Adventure
+* Animation
+* Children's
+* Comedy
+* Crime
+* Documentary
+* Drama
+* Fantasy
+* Film-Noir
+* Horror
+* Musical
+* Mystery
+* Romance
+* Sci-Fi
+* Thriller
+* War
+* Western
+* (no genres listed)
 
-I completed these projects with **consistent effort, problem-solving, debugging, and continuous learning**.
 
-Whenever I encountered errors or challenges, I worked through them, understood the underlying issue, and improved my implementation.
+Links Data File Structure (links.csv)
+---------------------------------------
 
-This experience strengthened my confidence in using Python for Data Analytics and encouraged me to continue building practical projects.
+Identifiers that can be used to link to other sources of movie data are contained in the file `links.csv`. Each line of this file after the header row represents one movie, and has the following format:
 
----
+    movieId,imdbId,tmdbId
 
-## 🎯 Career Goal
+movieId is an identifier for movies used by <https://movielens.org>. E.g., the movie Toy Story has the link <https://movielens.org/movies/1>.
 
-My primary interest is **Data Analytics and Data Science**.
+imdbId is an identifier for movies used by <http://www.imdb.com>. E.g., the movie Toy Story has the link <http://www.imdb.com/title/tt0114709/>.
 
-I am continuously working on improving my technical and analytical skills and building projects that solve practical problems using data.
+tmdbId is an identifier for movies used by <https://www.themoviedb.org>. E.g., the movie Toy Story has the link <https://www.themoviedb.org/movie/862>.
 
-My next goal is to gain more experience with:
+Use of the resources listed above is subject to the terms of each provider.
 
-- Advanced Data Analytics
-- SQL
-- Power BI
-- Advanced Statistics
-- Machine Learning
-- Real-world Business Intelligence projects
 
-## 📁 Repository Structure
+Cross-Validation
+----------------
 
-```text
-Kodbud-Data-Science-Internship/
-│
-├── Task_1_COVID_19_Analysis/
-├── Task_2_Titanic_Survival_Prediction/
-├── Task_3_IPL_EDA/
-├── Task_4_Movie_Recommendation/
-├── Task_5_Salary_Prediction/
-├── Task_6_Correlation_Heatmap/
-├── Task_7_Sentiment_Analysis/
-└── Task_8_Data_Cleaning_Challenge/
-
-## 🏆 Internship Achievement
-
-Successfully completed 8 Data Science & Data Analytics projects during my Kodbud internship, covering data analysis, visualization, data cleaning, Machine Learning, recommendation systems, correlation analysis, and sentiment analysis.
-
-This repository represents my practical learning journey and the effort I have invested in developing my Data Analytics and Data Science skills.
-
----
-
-## 🙏 Acknowledgement
-
-I would like to thank **Kodbud** for providing me with this internship opportunity and allowing me to gain practical experience through hands-on projects.
-
----
-
-## 👨‍💻 Author
-
-**Mohammed Yaseen**
-
-**Interested In:** Data Analytics | Data Science | Machine Learning | Python
-
----
-
-⭐ If you find these projects useful or interesting, feel free to explore the individual project folders.
+Prior versions of the MovieLens dataset included either pre-computed cross-folds or scripts to perform this computation. We no longer bundle either of these features with the dataset, since most modern toolkits provide this as a built-in feature. If you wish to learn about standard approaches to cross-fold computation in the context of recommender systems evaluation, see [LensKit](http://lenskit.org) for tools, documentation, and open-source code examples.
