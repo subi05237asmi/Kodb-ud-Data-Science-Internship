@@ -2,7 +2,7 @@
 
 ## 👨‍💻 About Me
 
-Hi, I'm **Mohammed Yaseen**, a Data Analytics and Data Science enthusiast with a strong interest in working with data, discovering meaningful insights, and building practical solutions using Python and Machine Learning.
+Hi, I'm **SUBI ASMI**, a Data Analytics and Data Science enthusiast with a strong interest in working with data, discovering meaningful insights, and building practical solutions using Python and Machine Learning.
 
 This repository contains the **8 projects** I completed during my **Kodbud Data Science & Data Analytics Internship**.
 
